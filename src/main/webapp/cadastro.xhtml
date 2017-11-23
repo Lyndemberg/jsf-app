@@ -8,11 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </h:head>
     <h:body>
+        <h:outputText value="Bem vindo, #{controladorLogin.usuario}"/><br/>
         <h:form>
             <h:outputLabel for="descricao" value="Descrição"/>
             <h:inputText id="descricao" value="#{controladorAlbum.album.descricao}"/><br/><br/>
             <h:outputLabel for="lancamento" value="Lançamento"/>
-            <h:inputText id="lancamento" value="#{controladorAlbum.album.lancamento}"/><br/>
+            <h:inputText id="lancamento" converter="convert.LocalDate" value="#{controladorAlbum.album.lancamento}"/><br/>
             <h:commandButton value="salvar" action="#{controladorAlbum.salvar()}"/>
         </h:form>
     </h:body>

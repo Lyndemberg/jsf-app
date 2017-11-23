@@ -4,4 +4,5 @@
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/Album.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/ServiceAlbuns.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/web/ControladorLogin.java
+/home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/convert/LocalDateConvert.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/persistence/AlbunsEmMemoria.java

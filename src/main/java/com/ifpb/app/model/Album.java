@@ -1,4 +1,5 @@
 package com.ifpb.app.model;
+import java.time.LocalDate;
 import java.util.Objects;
 /**
  *
@@ -6,12 +7,12 @@ import java.util.Objects;
  */
 public class Album {
     private String descricao;
-    private String lancamento;
+    private LocalDate lancamento;
 
     public Album() {
     }
 
-    public Album(String descricao, String lancamento) {
+    public Album(String descricao, LocalDate lancamento) {
         this.descricao = descricao;
         this.lancamento = lancamento;
     }
@@ -24,11 +25,11 @@ public class Album {
         this.descricao = descricao;
     }
 
-    public String getLancamento() {
+    public LocalDate getLancamento() {
         return lancamento;
     }
 
-    public void setLancamento(String lancamento) {
+    public void setLancamento(LocalDate lancamento) {
         this.lancamento = lancamento;
     }
 

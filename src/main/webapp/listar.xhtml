@@ -9,7 +9,7 @@
     </h:head>
     <h:body>
         
-        <h:outputText value="Bem vindo, #{controladorLogin.usuario}"/><br/>
+        
         <h4>Todos os álbuns</h4>
         <h:form>
             <h:dataTable value="#{controladorAlbum.todosAlbuns()}" var="album">
@@ -19,7 +19,7 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">Lançamento</f:facet>
-                    #{album.lancamento}
+                    <h:outputText converter="convert.LocalDate" value="#{album.lancamento}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Ação</f:facet>
