@@ -1,0 +1,7 @@
+com/ifpb/app/model/ServiceAlbuns.class
+com/ifpb/app/web/ControladorAlbum.class
+com/ifpb/app/persistence/AlbunsBanco.class
+com/ifpb/app/web/ControladorLogin.class
+com/ifpb/app/persistence/AlbunsEmMemoria.class
+com/ifpb/app/model/Album.class
+com/ifpb/app/model/Albuns.class
