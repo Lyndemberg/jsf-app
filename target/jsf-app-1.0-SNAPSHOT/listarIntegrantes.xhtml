@@ -17,7 +17,7 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">CPF</f:facet>
-                    #{integrante.cpf.valor}
+                    <h:outputText  converter="convert.Cpf" value="#{integrante.cpf}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Ação</f:facet>

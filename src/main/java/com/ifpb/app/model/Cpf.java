@@ -46,6 +46,11 @@ public class Cpf {
         return true;
     }
 
+    @Override
+    public String toString() {
+        return valor;
+    }
+
    
     
     
