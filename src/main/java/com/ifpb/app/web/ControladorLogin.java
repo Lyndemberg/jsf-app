@@ -15,7 +15,7 @@ public class ControladorLogin implements Serializable{
     
     public String logar(){
         if(usuarioValido()){
-            return "cadastro.xhtml";
+            return "inicial.xhtml";
         }
         return null;
     }

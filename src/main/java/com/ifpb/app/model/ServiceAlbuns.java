@@ -1,8 +1,6 @@
 package com.ifpb.app.model;
-
 import com.ifpb.app.persistence.AlbunsEmMemoria;
 import java.util.List;
-
 /**
  *
  * @author lyndemberg
