@@ -26,5 +26,13 @@ public class IntegrantesEmMemoria implements Integrantes{
     public List<Integrante> getAll() {
         return Collections.unmodifiableList(integrantes);
     }
+
+    @Override
+    public Integrante read(String nome) {
+        for(int i=0; i<integrantes.size(); i++){
+            if(integrantes.get(i).getNome().equalsIgnoreCase(nome)) return integrantes.get(i);
+        }
+        return null;
+    }
     
 }

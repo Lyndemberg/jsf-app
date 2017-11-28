@@ -9,10 +9,16 @@
         <h4>Login</h4>
         <h:form>
             <h:outputLabel for="usuario" value="Usuario"/>
-            <h:inputText id="usuario" value="#{controladorLogin.usuario}"/>
+            <h:inputText id="usuario" value="#{controladorLogin.usuario}"
+                         required="true"
+                         requiredMessage="Usuário obrigatório"/>
             <h:outputLabel for="senha" value="Senha"/>
-            <h:inputText id="senha" value="#{controladorLogin.senha}"/>
+            <h:inputText id="senha" value="#{controladorLogin.senha}"
+                         required="true"
+                         requiredMessage="Senha obrigatória"
+                         validator="validator.Senha"/>
             <h:commandButton value="Logar" action="#{controladorLogin.logar()}"/>
+            <h:messages />
         </h:form>
         
     </h:body>

@@ -2,6 +2,8 @@ package com.ifpb.app.web;
 
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 /**
  *
@@ -16,6 +18,9 @@ public class ControladorLogin implements Serializable{
     public String logar(){
         if(usuarioValido()){
             return "inicial.xhtml";
+        }else{
+            FacesContext context = FacesContext.getCurrentInstance();
+            context.addMessage("senha", new FacesMessage("Usuario/senha não confere"));
         }
         return null;
     }

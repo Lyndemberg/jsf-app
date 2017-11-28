@@ -9,6 +9,9 @@ import java.util.Objects;
 public class Cpf {
     private String valor;
 
+    public Cpf(){
+        this.valor = null;
+    }
     public Cpf(String valor) {
         this.valor = valor;
     }
@@ -46,9 +49,24 @@ public class Cpf {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return valor;
+    public boolean isValid(){
+        return valor.length() == 11;
+    }
+    public String formatted() {
+        if (notNullOrEmpty()) {
+            return toFormat();
+        }
+        return this.valor;
+    }
+    private boolean notNullOrEmpty() {
+        return this.valor != null && this.valor.length() == 11;
+    }
+
+    private String toFormat() {
+        return this.valor.substring(0, 3) + "."
+                + this.valor.substring(3, 6) + "."
+                + this.valor.substring(6, 9) + "-"
+                + this.valor.substring(9, 11);
     }
 
    

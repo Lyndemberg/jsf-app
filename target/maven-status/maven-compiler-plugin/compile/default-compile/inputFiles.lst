@@ -1,5 +1,6 @@
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/persistence/IntegrantesEmMemoria.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/web/ControladorAlbum.java
+/home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/validator/CpfValidator.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/Album.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/Integrantes.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/ServiceAlbuns.java
@@ -13,3 +14,5 @@
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/convert/CpfConvert.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/model/Integrante.java
 /home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/web/ControladorLogin.java
+/home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/convert/IntegranteConvert.java
+/home/lyndemberg/NetBeansProjects/jsf-app/src/main/java/com/ifpb/app/validator/SenhaValidator.java

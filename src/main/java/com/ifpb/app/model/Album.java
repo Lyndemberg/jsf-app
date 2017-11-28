@@ -8,6 +8,7 @@ import java.util.Objects;
 public class Album {
     private String descricao;
     private LocalDate lancamento;
+    private Integrante integrante = new Integrante();
 
     public Album() {
     }
@@ -33,11 +34,20 @@ public class Album {
         this.lancamento = lancamento;
     }
 
+    public Integrante getIntegrante() {
+        return integrante;
+    }
+
+    public void setIntegrante(Integrante integrante) {
+        this.integrante = integrante;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         hash = 29 * hash + Objects.hashCode(this.descricao);
         hash = 29 * hash + Objects.hashCode(this.lancamento);
+        hash = 29 * hash + Objects.hashCode(this.integrante);
         return hash;
     }
 
@@ -59,7 +69,12 @@ public class Album {
         if (!Objects.equals(this.lancamento, other.lancamento)) {
             return false;
         }
+        if (!Objects.equals(this.integrante, other.integrante)) {
+            return false;
+        }
         return true;
     }
+
+    
     
 }

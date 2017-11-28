@@ -13,15 +13,15 @@ public class CpfConvert implements Converter{
 
     @Override
     public Object getAsObject(FacesContext context, UIComponent component, String value) {
-        if(value.length()<14) return null;
+        if(value == null) return new Cpf("");
         return new Cpf(value);
     }
 
     @Override
     public String getAsString(FacesContext context, UIComponent component, Object value) {
-        if(value == null) return null;
+        if(value == null) return "";
         Cpf cpf = (Cpf) value;
-        return cpf.toString();
+        return cpf.getValor();
     }
     
 }

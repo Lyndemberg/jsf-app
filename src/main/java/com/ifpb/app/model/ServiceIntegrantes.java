@@ -11,14 +11,7 @@ public class ServiceIntegrantes {
     private final Integrantes dao = new IntegrantesEmMemoria();
     
     public boolean salvar(Integrante a){
-        if(ehValido(a)){
-            return dao.salvar(a);
-        }
-        return false;
-    }
-    private boolean ehValido(Integrante a){
-        if(a.getCpf() == null) return false;
-        return true;
+        return dao.salvar(a);
     }
     public boolean remover(Integrante a){
         return dao.remove(a);
